@@ -379,7 +379,7 @@
                         <?php
 
                           $sql = "SELECT m.item,m.batch,c.categoryname FROM materialstock m JOIN category c ON c.category_id = m.category_id ";
-                        $result = mysqli_query($db, $sql) or die("<b>Error:</b> Problem on Retrieving Image BLOB<br/>" . mysqli_error($db));
+                       
                         $reslt = mysqli_fetch_all($result);
 
                         $i=1;
