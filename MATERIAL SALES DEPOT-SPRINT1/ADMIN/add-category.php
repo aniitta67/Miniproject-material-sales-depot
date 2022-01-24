@@ -11,13 +11,10 @@
                $sql = "INSERT INTO category (category) VALUES('$category')";
                $current_id = mysqli_query($con, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($con));
           }
-      //   $sql = "SELECT image FROM category WHERE category_id = 7 ";
-      // $result = mysqli_query($db, $sql) or die("<b>Error:</b> Problem on Retrieving Image BLOB<br/>" . mysqli_error($db));
-      // $row = mysqli_fetch_array($result);
-      // $img = $row["image"];
+     
    
 ?>
-         <!-- <img src="<?php echo $img; ?>" /> -->
+         
          <!-- Content Wrapper. Contains page content -->
          <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -111,9 +108,9 @@
                         $result = mysqli_query($con, $sql) or die("<b>Error:</b> Problem on Retrieving Image BLOB<br/>" . mysqli_error($con));
                         $reslt = mysqli_fetch_all($result);
 
-                        // print_r($reslt[6]);exit;
+                       
 
-                        // $img = $reslt["image"];
+                       <!-- sl.no -->
                         $i=1;
                         foreach ($reslt as $key => $value) { ?>
                            
