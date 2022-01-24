@@ -11,10 +11,7 @@
                $sql = "INSERT INTO category (category) VALUES('$category')";
                $current_id = mysqli_query($con, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($con));
           }
-      //   $sql = "SELECT image FROM category WHERE category_id = 7 ";
-      // $result = mysqli_query($db, $sql) or die("<b>Error:</b> Problem on Retrieving Image BLOB<br/>" . mysqli_error($db));
-      // $row = mysqli_fetch_array($result);
-      // $img = $row["image"];
+      
    
 ?>
          <!-- <img src="<?php echo $img; ?>" /> -->
