@@ -112,7 +112,7 @@
            // $sql="UPDATE `material_det` SET `category_id` = '$cat', `item_name` = '$name', `m_type` = '$mtype', `uprice` = '$price', `cost` = '$cost', `cgst` = '$cgst', `sgst` = '$sgst', `mrp` = '$rprice', `image` = '$target_file' WHERE `material_det`.`matid` ='$mmid'";
         }
         $result=$con->query($sql);
-        echo "<script>alert('Record Updated');</script>";
+        // echo "<script>alert('Record Updated');</script>";
         $cat=0;
         $name="";
         $mtype="";
@@ -121,13 +121,18 @@
         $uprice="";
         $cgst="";
         $sgst="";
-        // header("Location:material_stock.php");
+        ?>
+        <script type="text/javascript">
+          location.href='admin_view_material.php';
+          alert('Material details updated succesfully.');
+        </script>
+        <?php
     }
 
 
   $sql="select * from category";
   $result=$con->query($sql);
-  $row=mysqli_fetch_assoc($result)
+ // $row=mysqli_fetch_assoc($result)
 
 
 
@@ -141,7 +146,7 @@
                <div class="container-fluid">
                   <div class="row mb-2">
                      <div class="col-sm-6 animated bounceInRight">
-                        <h1 class="m-0"><span class=""></span> Update Materials</h1>
+                        <h1 class="m-0"><span class=""></span> Update Material</h1>
                      </div>
                      <!-- /.col -->
                      <div class="col-sm-6">
