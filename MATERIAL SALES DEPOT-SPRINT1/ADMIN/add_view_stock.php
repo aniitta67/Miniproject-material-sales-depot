@@ -18,7 +18,7 @@
     $name=$crow['item_name'];
     $mtype=$crow['m_type'];
     $cost="0";
-    // $image=$crow['Image'];
+    
     $uprice=$crow['uprice'];
     $cgst=$crow['cgst'];
     $sgst=$crow['sgst'];
@@ -51,38 +51,7 @@
 
    if(isset($_POST['submit']))
     {
-      //   $name=$_POST['name'];
-      //   $sql="select * from  `material_det` where `item_name`='$name'";
-      //   if($_SESSION['act']=="Save")
-      //   {
-      //   $result=$con->query($sql);
-      //   if (mysqli_num_rows($result)>0)
-      //   {
-      //     echo "<script>alert('Name Already Exists');</script>";
-      //     return;
-      //   }
-      // }
-
-
-
-      //   $filename= basename($_FILES["file1"]["name"]);
-
-      //   $ext = pathinfo($filename, PATHINFO_EXTENSION);
-
-      //   $fnn=date("YmdHis").".".$ext;
-
-      //   $target_dir = "../uploads/";
-      // // $target_file = $target_dir . basename($_FILES["file1"]["name"]);
-      //   $target_file = $target_dir.$fnn;
-      //   if (move_uploaded_file($_FILES["file1"]["tmp_name"], $target_file)) {
-      //     // echo "The file ". htmlspecialchars( basename( $_FILES["file1"]["name"])). " has been uploaded.";
-      //     // echo "<script>alert('ok')</script>";
-      //   }
-      //   else
-      //   {
-      //     // echo "<script>alert('error')</script>";
-      //   }
-
+    
         echo "hello";
         $cat=$_POST['cat'];
         $name=$_POST['name'];
