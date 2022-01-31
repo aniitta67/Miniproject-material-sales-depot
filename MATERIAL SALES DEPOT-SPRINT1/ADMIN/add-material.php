@@ -5,9 +5,11 @@
 
    // require('../connection.php');
    include('../connection.php');
+   $sel="all";
 
    if(isset($_GET['id']))
   {
+    $sel="filt";
     $idd=$_GET['id'];
     $sql="select * from material_det where matid=$idd";
     $cres=$con->query($sql);
@@ -131,7 +133,7 @@
 
   $sql="select * from category";
   $result=$con->query($sql);
-  $row=mysqli_fetch_assoc($result)
+  //$row=mysqli_fetch_assoc($result)
 
 
 
@@ -379,7 +381,7 @@
                         <?php
 
                           $sql = "SELECT m.item,m.batch,c.categoryname FROM materialstock m JOIN category c ON c.category_id = m.category_id ";
-                       
+                        $result = mysqli_query($db, $sql) or die("<b>Error:</b> Problem on Retrieving Image BLOB<br/>" . mysqli_error($db));
                         $reslt = mysqli_fetch_all($result);
 
                         $i=1;
