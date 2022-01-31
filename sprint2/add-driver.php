@@ -78,7 +78,7 @@
                   <div class="col-md-4">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Phone No.</label>
-                    <input type="number" class="form-control" name="phone_no" required placeholder="Phone No.">
+                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone_no" required placeholder="Enter 10 digits">
                   </div>
                </div>
                   <div class="col-md-4">
