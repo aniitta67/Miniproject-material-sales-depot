@@ -43,7 +43,7 @@
         }
         else
         {
-            echo "<script>alert('password and confirm password not matching');</script>";
+            echo "<script>alert('password and confirm password not matching.Try again!!');</script>";
         }
 
     }
@@ -94,7 +94,7 @@
                   </div>
                   <span>Phone</span>
                   <div class="input-group mb-3">
-                     <input type="text" class="form-control" name="Phone" required placeholder="Phone">
+                     <input type="tel" pattern="[0-9]{10}" class="form-control" name="Phone" required placeholder="Phone(Enter 10 digits)">
                      <div class="input-group-append">
                         <div class="input-group-text">
                            <!-- <span class="fas fa-lock"></span> -->
@@ -121,7 +121,7 @@
                   </div> -->
                   <span>Password</span>
                   <div class="input-group mb-3">
-                     <input type="password" class="form-control" name="Password" required placeholder="Password">
+                     <input type="password" minlength="6" class="form-control" name="Password" required placeholder="Password">
                      <div class="input-group-append">
                         <div class="input-group-text">
                            <!-- <span class="fas fa-lock"></span> -->
